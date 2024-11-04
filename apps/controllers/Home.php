@@ -17,8 +17,8 @@ class Home extends Controller {
         echo "anda memanggil action home dengan data1 = $data1 dan data2 = $data2 \n ";
     }
 
-    public function lihatdata() {
-        $data = $this->dt->getDataOne();
+    public function lihatdata($id) {
+        $data = $this->df->getDataById($id);
 
         $this->loadview('template/header', ['title'=>'Detail Barang']);
         $this->loadview('home/detailbarang', $data);

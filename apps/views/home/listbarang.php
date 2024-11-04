@@ -1,24 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <table>
+
+    <table class="table">
+    <thead class="thead-dark">
         <tr>
             <th>ID</th>
             <th>Nama Barang</th>
             <th>QTY</th>
         </tr>
+    </thead>
         <?php foreach ($data as $item) : ?>
-        <tr>
+        <tbody>
+        <tr scope="row">
             <td><?= $item['id'] ?></td>
             <td><?= $item['nama'] ?></td>
             <td><?= $item['qty'] ?></td>
         </tr>
+        </tbody>
         <?php endforeach ?>
     </table>
-</body>
-</html>

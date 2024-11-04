@@ -1,7 +1,10 @@
 <?php
 
+require "Config.php";
 require "Controller.php";
 require "Database.php";
+
+
 class Boot {
 
     protected $controller = 'index';
