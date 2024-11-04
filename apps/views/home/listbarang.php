@@ -1,6 +1,6 @@
 
     <table class="table">
-    <thead class="thead-dark">
+    <thead class="thead-dark table-hover">
         <tr>
             <th>ID</th>
             <th>Nama Barang</th>
